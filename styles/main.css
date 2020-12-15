@@ -1,0 +1,277 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background: #F4F3EE;
+    background-image: url("map.jpeg");
+    color: #333;
+    line-height: 1.5rem;
+    margin: 0;
+}
+header {
+  background: #333;
+  color: #F4F3EE;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+h1, h2,h6 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+h2 {
+  text-align: center;
+  margin: 2rem;
+}
+p {
+  padding: 1rem;
+}
+h5 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+}
+nav ul li{
+  margin: 0;
+  margin-right: 1rem;
+}
+nav a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+dl {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+dt {
+margin-bottom: .5rem;
+padding: .5rem;
+background: #333;
+color: #F4F3EE;
+box-shadow: 6px 6px 5px gray
+}
+.containermap {
+    margin: 0 auto; /* keep */
+    display: grid; /* keep */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "containermap main"
+        "containermap main"
+        "containermap main"
+}
+.container {
+    margin: 0 auto; /* keep */
+    display: grid; /* keep */
+    padding: 1rem;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "garden tower memory"
+}
+.container2 {
+  margin: 0 auto;
+  display: flex;
+}
+.containerarchitect {
+  background: url("images/slash-closeup.jpg");
+}
+.containerarchitect img {
+  width: 60%;
+}
+#map {
+ height: 500px;
+ width: 700px;
+ border: 1px dashed #333;
+ margin: 0 auto;
+}
+.carousel-caption {
+  color: #333;
+}
+div {
+  margin: 1rem;
+  padding: 1rem;
+}
+div img {
+  border-radius: 10px;
+}
+#main {
+  line-height: 1.5rem;
+  margin-right: 3.5rem;
+}
+.dob {
+  font-size: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#garden {
+  grid-area: garden;
+  background: #BCB8B1;
+
+}
+#tower {
+  grid-area: tower;
+  background: #BCB8B1;
+}
+#memory {
+  grid-area: memory;
+  background: #BCB8B1;
+}
+#about  {
+  margin: 1rem;
+  margin-bottom: 2.5rem;
+}
+#libeskind {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.head1 {
+  margin: 0 auto;
+}
+
+a {
+    color: #E0AFA0;
+}
+a:hover {
+    color: #463F3A;
+}
+/*code from W3 How to Slideshow,https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: #E0AFA0;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.numbertext {
+  color: #F4F3EE;
+}
+/* Caption text */
+.text {
+  color: #333;
+  font-size: 15px;
+  margin: 0 auto;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  text-align: center;
+  height: 15px;
+  width: 15px;
+  background-color: #E0AFA0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #333;
+}
+/*end slideshow*/
+
+.closing {
+  text-align: center;
+}
+footer {
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+  margin: 0 auto; /* keep */
+  display: grid; /* keep */
+  background: #E0AFA0;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "garden garden garden "
+  "tower tower tower"
+  "memory memory memory";
+  }
+  .container img {
+    width: 80%;
+    margin: 0 auto; /* keep */
+  }
+  .container p {
+    width: 80%;
+    margin: 0 auto; /* keep */
+  }
+  div {
+    margin: 0 auto;
+  }
+  nav ul {
+    font-size: 70%;
+  }
+  #garden {
+    background: #E0AFA0;
+  }
+  #tower {
+    background: #E0AFA0;
+  }
+  #memory {
+    background: #E0AFA0;
+  }}
+  @media screen and (max-width: 950px) {
+    .containermap {
+    margin: 0 auto; /* keep */
+    display: grid; /* keep */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "placemap"
+    "main"
+    }
+  #mmap img{
+    width:60%;
+    margin: 0 auto;
+    }
+  #main {
+    margin: 0 auto;
+  }
+  #libeskind {
+    margin: 0 2rem;
+  }}
